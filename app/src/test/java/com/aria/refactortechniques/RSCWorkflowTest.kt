@@ -14,7 +14,6 @@ class RSCWorkflowTest {
     @Before
     fun setUp() {
         // workflow = RSCWorkflow_solution() // Can't put it in a test harness
-        packet = Packet()
     }
 
     @Test
