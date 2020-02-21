@@ -9,6 +9,18 @@ Use it unless there are many different calls against the same global. If there a
  
 A call to a static method.
 
+```
+class CouponPresenter {
+
+    private var couponsList = listOf("Coupon 1", "Coupon 2")
+
+    fun setup() {
+        CouponUtils.formatCoupons(couponsList)
+    }
+}
+```
+
+
 ## Steps
 
 If you have an automated refactoring tool, Extract and Override Call is trivial. You can do it using the Extract Method refactoring. However, if you don’t, use the following steps. They allow you to extract any call safely, even if you don’t have tests in place.
